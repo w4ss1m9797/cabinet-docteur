@@ -1,4 +1,5 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,28 +7,20 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Collection;
-
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class DossierMed {
+public class MedCertif {
 
-
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    private Collection<Consultation> consultations ;
-
+    private LocalDate startDate;
+    private LocalDate endDate;
 
     @ManyToOne
     @JoinColumn(name = "patient_code")
     private Patient patient;
-
-
-
 }

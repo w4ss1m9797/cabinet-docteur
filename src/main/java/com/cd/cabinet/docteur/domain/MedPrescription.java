@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class MedPrescription {
 
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code ;
 

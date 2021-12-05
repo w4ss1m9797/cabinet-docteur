@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Collection;
 
 
 @Entity
@@ -14,13 +15,12 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class Prescription {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code ;
 
     private LocalDate date;
-
     @OneToMany(cascade = CascadeType.ALL)
-    private MedPrescription medPrescription;
+    private Collection<MedPrescription> medPrescription;
 
 }

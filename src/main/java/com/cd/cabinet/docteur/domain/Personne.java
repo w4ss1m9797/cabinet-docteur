@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 
 import lombok.AllArgsConstructor;
@@ -18,7 +18,7 @@ import java.time.LocalDate;
 public class Personne {
 
     //@Id(GenerationType = GenerationType.AUTO)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code;
 

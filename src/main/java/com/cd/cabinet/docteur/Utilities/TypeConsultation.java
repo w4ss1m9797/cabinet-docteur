@@ -1,4 +1,4 @@
-package Utilities;
+package com.cd.cabinet.docteur.Utilities;
 
 public enum TypeConsultation {
 

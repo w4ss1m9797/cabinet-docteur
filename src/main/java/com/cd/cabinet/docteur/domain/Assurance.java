@@ -1,7 +1,7 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 
-import Utilities.TypeSec;
+import com.cd.cabinet.docteur.Utilities.TypeSec;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,7 +19,7 @@ import java.time.LocalDate;
 public class Assurance {
 
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer num_sec ;
 

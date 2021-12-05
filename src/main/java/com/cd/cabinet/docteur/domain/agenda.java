@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 
 import lombok.AllArgsConstructor;
@@ -15,7 +15,7 @@ import java.util.Collection;
 public class agenda {
 
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code;
 

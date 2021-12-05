@@ -1,6 +1,5 @@
-package Utilities;
+package com.cd.cabinet.docteur.Utilities;
 
-import domain.DocColleague;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

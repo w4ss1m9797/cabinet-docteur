@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 
 import javax.persistence.Entity;

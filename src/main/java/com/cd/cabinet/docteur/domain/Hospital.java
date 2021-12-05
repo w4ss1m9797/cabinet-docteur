@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 public class Hospital {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code;
 

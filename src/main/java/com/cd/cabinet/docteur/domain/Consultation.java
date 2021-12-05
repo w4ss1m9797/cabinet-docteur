@@ -1,7 +1,7 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
-import Utilities.Motif;
-import Utilities.TypeConsultation;
+import com.cd.cabinet.docteur.Utilities.Motif;
+import com.cd.cabinet.docteur.Utilities.TypeConsultation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class Consultation {
 
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code;
 
@@ -30,7 +30,6 @@ public class Consultation {
 
     private Double tension;
 
-    @OneToOne(cascade = CascadeType.ALL)
     private TypeConsultation typeConsultation;
 
 

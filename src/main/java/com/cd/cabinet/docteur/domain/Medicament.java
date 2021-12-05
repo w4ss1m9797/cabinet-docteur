@@ -1,4 +1,4 @@
-package domain;
+package com.cd.cabinet.docteur.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,12 +17,12 @@ import javax.persistence.Id;
 @Entity
 public class Medicament {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Integer code;
 
 
-    private Utilities.medType medType;
+    private com.cd.cabinet.docteur.Utilities.medType medType;
 
 
     private String nom;
